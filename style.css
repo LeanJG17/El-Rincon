@@ -98,8 +98,10 @@ a{
     margin: auto;
     /* border:1px solid green; */
     text-align: center;
-    min-height: 800px;
 }
+
+
+
 div {
     /* border:1px solid orange; */
 }
@@ -163,3 +165,18 @@ ul {
     box-shadow: 2px 2px 2px black;
 }
 
+.third img {
+    width: 400px;
+    height: 300px;
+    /* object-fit:cover;
+    object-position: center; */
+    box-shadow: 2px 2px 2px black;
+}
+
+.text-last {
+    text-align: center;
+}
+
+.menu {
+    
+}
