@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -100,12 +103,63 @@ a{
     text-align: center;
 }
 
+.boxes {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    box-shadow: 2px 2px 2px black ;
+}
 
+.box {
+    width: 50%;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 300px;
+    padding: 25px;
+}
 
+.box img {
+    width: 100%;
+    height: auto;
+}
+.box *{
+ z-index: 3;
+}
+.box.bg-img{
+    color:white;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 6px black;
+    background-image: url(Arepas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box.bg-red{
+    background-color: rgba(225,0,0,0.5);
+    
+}
+.bg-overlay {
+    position: relative;
+}
+
+.bg-overlay::before {
+    content: "";
+    background-color: rgba(225,80,80,0.5);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
 div {
     /* border:1px solid orange; */
 }
-.first {
+/*.first {
     background-image: url(Arepas.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -153,6 +207,7 @@ ul {
 }
 }
 
+
 .second {
     background-image: url(Empanadas.jpg);
     background-repeat: no-repeat;
@@ -163,26 +218,74 @@ ul {
     flex-direction: column;
     position: relative;
     background-size: cover;
+    width: 400px;
+    height: 400px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.second::before{
+    content:"";
+    background-color: rgba(225,0,0,0.5);
+    display: block;
     width: 100%;
-    height: 300px;
+    height:100%;
+    position:absolute;
     box-shadow: 2px 2px 2px black;
 }
 
 .third img {
     width: 400px;
-    height: 300px;
-    /* object-fit:cover;
-    object-position: center; */
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    position:relative;
+    background-size: cover;
+    box-shadow: 2px 2px 2px black;
+} 
+.third::before{
+    content:"";
+    background-color:rgba(225,0,0,0.5);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     box-shadow: 2px 2px 2px black;
 }
+*/
+
 
 .text-last {
     text-align: center;
 }
 
-.menu {
+.title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 9%; */
+}
+
+
+.title img {
+    width:100%;
+    max-width: 200px;
+    display: block;
+    margin: auto;
+    height: auto;
+}
+
+.menu h1 {
+    text-align: center;
+}
+.menu .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     
 }
-title{
-    
+
+.menu .categories h1{
+    width: 300px;
 }
